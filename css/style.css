@@ -23,7 +23,7 @@ body {
 .borde-blanco-negro {
   background-color: white;
 
-  border: double 9px;
+  border: double 9px black;
 }
 
 .fondo-cabecera {
@@ -67,96 +67,6 @@ body {
     color: white;
     background-color: black;
     text-decoration: none;
-  }
-}
-
-/*********************MAIN******************/
-main {
-  background-color: #a6d567;
-}
-
-/*********************BANNER******************/
-.banner {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-content: center;
-}
-
-.imagen-banner {
-  width: 33.333333%;
-}
-
-/*********************CONOCELO******************/
-
-.conocelo {
-  background-color: white;
-  border: solid black 4px;
-}
-
-.contenedor-conocelo {
-  display: flex;
-  flex-direction: column;
-  font-size: large;
-  align-items: center;
-
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
-
-.presentacion-breve {
-  margin: 10px;
-
-  text-align: center;
-}
-
-.boton-conocelo {
-  margin-bottom: 10px;
-
-  padding: 5px;
-  padding-bottom: 7px;
-  padding-left: 8px;
-}
-
-/*********************PROYECTOS******************/
-.proyectos-inicio {
-  width: 90%;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.contenedor-proyecto {
-  width: 30%;
-  min-width: 200px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 6px;
-  margin-right: 6px;
-}
-
-.proyecto-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  background-color: #bc4420;
-
-  img {
-    width: 100%;
-    aspect-ratio: 16/9;
-  }
-
-  p {
-    border-top: solid black 4px;
-    text-align: center;
-    padding: 7px;
   }
 }
 
@@ -245,4 +155,168 @@ footer {
   justify-content: space-around;
 }
 
-/*********************RESPONSIVE*********************/
+/************************************I N D E X*******************************/
+/*********************MAIN******************/
+.fondo-inicio {
+  background-color: #a6d567;
+}
+
+/*********************BANNER******************/
+.banner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: center;
+}
+
+.imagen-banner {
+  width: 33.333333%;
+}
+
+/*********************CONOCELO******************/
+
+.conocelo {
+  background-color: white;
+  border-bottom: solid black 4px;
+  border-top: solid black 4px;
+}
+
+.contenedor-conocelo {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.presentacion-breve {
+  margin: 10px;
+
+  text-align: center;
+}
+
+.boton-conocelo {
+  margin-bottom: 10px;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  padding-bottom: 7px;
+  padding-left: 8px;
+}
+
+/*********************PROYECTOS******************/
+.proyectos-inicio {
+  width: 90%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contenedor-proyecto {
+  width: 30%;
+  min-width: 200px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.proyecto-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-color: #bc4420;
+
+  img {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+
+  p {
+    border-top: solid black 4px;
+    text-align: center;
+    padding: 7px;
+  }
+}
+
+/************************************P R O Y E C T O S*******************************/
+/*********************MAIN******************/
+.fondo-proyectos {
+  background-color: #bc4420;
+}
+
+.margen-principal {
+  width: 90%;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/*********************BLOQUE IZQUIERDO******************/
+.contenedor-izquierdo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-left: initial;
+}
+
+.bordeBlanco-FondoNegro {
+  border: solid white 4px;
+  background-color: black;
+}
+
+.preview-img {
+  margin-top: 7px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  display: flex;
+
+  img {
+    margin: 7px;
+    width: 100%;
+
+    aspect-ratio: 16/9;
+  }
+}
+
+.preview-texto {
+  margin-top: 7px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  color: white;
+
+  aspect-ratio: 3/4;
+
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+
+  p {
+    margin-top: 14px;
+
+    font-family: Myanmar1;
+  }
+}
+/*********************BLOQUE DERECHO******************/
+.contenedor-derecho {
+  margin-right: initial;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+  padding: 7px;
+  margin-top: 7px;
+  margin-left: 7px;
+  margin-bottom: 7px;
+}
