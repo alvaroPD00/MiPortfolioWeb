@@ -252,6 +252,8 @@ footer {
 /*********************MAIN******************/
 .fondo-proyectos {
   background-color: #bc4420;
+
+  display: flex;
 }
 
 .margen-principal {
@@ -265,19 +267,21 @@ footer {
 
 /*********************BLOQUE IZQUIERDO******************/
 .contenedor-izquierdo {
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   margin-left: initial;
 }
 
 .bordeBlanco-FondoNegro {
+  display: flex;
   border: solid white 4px;
   background-color: black;
+  color: white;
 }
 
 .preview-img {
-  margin-top: 7px;
+  margin-top: 14px;
   margin-right: 7px;
   margin-bottom: 7px;
   display: flex;
@@ -293,18 +297,22 @@ footer {
 .preview-texto {
   margin-top: 7px;
   margin-right: 7px;
-  margin-bottom: 7px;
+  margin-bottom: 14px;
   color: white;
 
-  aspect-ratio: 3/4;
+  aspect-ratio: 16/9;
 
   display: flex;
   flex-direction: column;
   padding: 7px;
 
+  span {
+    font-size: larger;
+  }
+
   p {
     margin-top: 14px;
-
+    font-size: x-large;
     font-family: Myanmar1;
   }
 }
@@ -313,10 +321,222 @@ footer {
   margin-right: initial;
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
 
   padding: 7px;
-  margin-top: 7px;
+  margin-top: 14px;
   margin-left: 7px;
-  margin-bottom: 7px;
+  margin-bottom: 14px;
+}
+
+.listado-proyectos {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+
+  border: solid black 7px;
+}
+
+.contenedor-derecho .listado-proyectos:hover {
+  border: solid #4aa22a 7px;
+}
+
+/*********************RESPONSIVE******************/
+@media screen and (max-width: 450px) {
+  .listado-proyectos {
+    font-size: small;
+
+    border: 0px;
+  }
+  .preview-texto {
+    span {
+      font-size: small;
+    }
+    p {
+      font-size: medium;
+    }
+  }
+
+  .contenedor-izquierdo {
+    width: 51%;
+  }
+
+  .contenedor-derecho {
+    width: 49%;
+    a {
+      margin-bottom: 7px;
+    }
+  }
+
+  .margen-principal {
+    width: 95%;
+  }
+}
+
+/************************************ARTICULO DE PROYECTO*******************************/
+/*********************MAIN******************/
+
+.margen-articulo-proyecto {
+  width: 90%;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*********************BLOQUE NEGRO INICIAL******************/
+.negro-inicial {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7px;
+  margin-top: 14px;
+
+  margin-bottom: 14px;
+
+  img {
+    width: 43%;
+    aspect-ratio: 16/9;
+  }
+}
+
+.titulos-iniciales {
+  display: flex;
+  flex-direction: column;
+  margin-left: 34px;
+  margin-top: 10px;
+
+  font-size: x-large;
+  span {
+    font-size: xx-large;
+  }
+
+  h1 {
+    margin-bottom: 14px;
+    margin-top: 14px;
+  }
+}
+
+/*********************TEXTO CENTRADO INICIAL******************/
+.bloque-inicial {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  display: flex;
+
+  margin-bottom: 21px;
+  flex-direction: column;
+}
+
+.textos {
+  p {
+    font-size: x-large;
+    font-family: Myanmar1;
+    padding: 7px;
+  }
+}
+.contenedor-titulo {
+  border-bottom: solid black 4px;
+
+  h2 {
+    padding: 7px;
+  }
+}
+
+.boton-al-proyecto {
+  border-top: solid black 4px;
+  display: flex;
+  justify-content: center;
+  a {
+    margin: 14px;
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    background-color: black;
+    border: solid #bc4420 4px;
+    padding: 14px;
+
+    text-align: center;
+  }
+}
+
+/*********************ARTICULOS DESARROLLO******************/
+.bloque-desarrollo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 14px;
+}
+
+.bloque-texto {
+  width: 45%;
+  margin: 7px;
+}
+
+.derecha-imagen {
+  aspect-ratio: 3/2;
+  width: 45%;
+  padding: 7px;
+
+  margin: 7px;
+}
+
+/*********************FONDO MAIN******************/
+.volver-proyectos {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 14px;
+
+  text-decoration: none;
+  font-size: larger;
+  padding: 14px;
+
+  text-align: center;
+}
+
+/*********************RESPONSIVE******************/
+@media screen and (max-width: 850px) {
+  .negro-inicial {
+    width: 93%;
+    img {
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+  }
+
+  .titulos-iniciales {
+    margin: 0;
+
+    span {
+      font-size: medium;
+    }
+
+    h1 {
+      font-size: large;
+      margin-top: 0px;
+    }
+  }
+
+  .bloque-inicial {
+    width: 90%;
+  }
+
+  .bloque-texto {
+    width: 90%;
+  }
+
+  .derecha-imagen {
+    width: 90%;
+  }
 }
