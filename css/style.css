@@ -373,6 +373,166 @@ footer {
   }
 }
 
+/************************************APARTADO SOBRE MI*******************************/
+/*********************MAIN******************/
+
+/*********************BLOQUE NEGRO INICIAL******************/
+.negro-perfil {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7px;
+  margin-top: 14px;
+
+  margin-bottom: 14px;
+
+  img {
+    width: 24%;
+    aspect-ratio: 1/1;
+  }
+}
+
+/*********************introduccion INICIAL******************/
+.mi-introduccion {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  display: flex;
+
+  margin-bottom: 21px;
+  flex-direction: column;
+  p {
+    font-size: x-large;
+    padding: 7px;
+  }
+}
+
+/*********************ARTICULOS******************/
+.contenedor-articulo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  display: flex;
+
+  margin-bottom: 21px;
+  flex-direction: column;
+
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    padding: 7px;
+  }
+
+  a {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 14px;
+
+    margin-bottom: 14px;
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    background-color: black;
+    border: solid #bc4420 4px;
+    padding: 14px;
+
+    text-align: center;
+  }
+}
+
+.contenedor-textos {
+  border-bottom: solid black 2px;
+
+  span {
+    color: grey;
+    padding: 7px;
+  }
+
+  h3 {
+    padding-left: 7px;
+
+    padding-right: 7px;
+
+    padding-top: 7px;
+  }
+
+  h4 {
+    padding-left: 7px;
+
+    padding-right: 7px;
+
+    padding-bottom: 7px;
+  }
+
+  p {
+    font-size: x-large;
+    font-family: Myanmar1;
+    padding: 7px;
+  }
+}
+
+.grado {
+  background-color: black;
+  color: white;
+
+  span {
+    color: white;
+  }
+}
+
+/*********************RESPONSIVE******************/
+@media screen and (max-width: 850px) {
+  .negro-perfil {
+    width: 93%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .mi-introduccion {
+    width: 90%;
+    p {
+      font-size: medium;
+    }
+  }
+
+  .contenedor-articulo {
+    width: 90%;
+    margin-bottom: 21px;
+
+    font-size: medium;
+    h2 {
+      font-size: larger;
+    }
+
+    a {
+      width: 90%;
+    }
+  }
+
+  .contenedor-textos {
+    span {
+      font-size: medium;
+    }
+
+    h3 {
+      font-size: large;
+    }
+
+    h4 {
+      font-size: medium;
+    }
+
+    p {
+    }
+  }
+}
+
 /************************************ARTICULO DE PROYECTO*******************************/
 /*********************MAIN******************/
 
