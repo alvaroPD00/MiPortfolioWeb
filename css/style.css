@@ -13,11 +13,6 @@ body {
   src: url("Pokemon-Classic.woff") format("woff");
 }
 
-@font-face {
-  font-family: "Myanmar1";
-  src: url("Myanmar1.woff") format("woff");
-}
-
 /*********************CABECERA******************/
 
 .borde-blanco-negro {
@@ -46,7 +41,7 @@ body {
 .logo-cabecera {
   text-align: center;
   margin: 6px;
-
+  font-size: large;
   margin-bottom: 10px;
   color: black;
 }
@@ -59,11 +54,11 @@ body {
   align-content: center;
 
   a {
-    font-size: x-small;
+    font-size: small;
     padding: 7px;
     padding-bottom: 9px;
     padding-left: 10px;
-    margin: 7px;
+    margin: 9px;
     color: white;
     background-color: black;
     text-decoration: none;
@@ -87,13 +82,13 @@ footer {
   margin-left: auto;
   margin-right: auto;
   span {
-    font-size: larger;
+    font-size: x-large;
     margin: 10px;
   }
 }
 
 .footer-content {
-  font-family: Myanmar1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,15 +99,15 @@ footer {
   margin-right: 10px;
 
   p {
-    font-size: larger;
+    font-size: x-large;
   }
   img {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 5px;
     color: white;
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 43px;
   }
 }
 
@@ -152,7 +147,31 @@ footer {
 .redes {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+/*********************RESPONSIVE******************/
+@media screen and (max-width: 850px) {
+  .footer-content {
+    p {
+      font-size: large;
+    }
+
+    img {
+      height: 40px;
+      width: 33px;
+    }
+  }
+
+  .logo-cabecera {
+    font-size: medium;
+  }
+
+  .botones-cabecera {
+    a {
+      font-size: x-small;
+    }
+  }
 }
 
 /************************************I N D E X*******************************/
@@ -207,7 +226,7 @@ footer {
   padding-left: 8px;
 }
 
-/*********************PROYECTOS******************/
+/*********************PROYECTOS INICIO******************/
 .proyectos-inicio {
   width: 90%;
 
@@ -245,6 +264,13 @@ footer {
     border-top: solid black 4px;
     text-align: center;
     padding: 7px;
+  }
+}
+
+/*********************RESPONSIVE******************/
+@media screen and (max-width: 850px) {
+  .contenedor-conocelo {
+    font-size: small;
   }
 }
 
@@ -294,26 +320,50 @@ footer {
   }
 }
 
-.preview-texto {
+.contenedor-inferior {
   margin-top: 7px;
   margin-right: 7px;
   margin-bottom: 14px;
-  color: white;
 
-  aspect-ratio: 16/9;
+  padding: 7px;
+  color: white;
 
   display: flex;
   flex-direction: column;
-  padding: 7px;
+  justify-content: space-between;
 
+  a {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: medium;
+
+    padding: 7px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 14px;
+    margin-bottom: 14px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+
+    border: solid white 4px;
+    text-align: center;
+  }
+}
+
+.preview-texto {
+  display: flex;
+  flex-direction: column;
   span {
     font-size: larger;
   }
 
   p {
     margin-top: 14px;
-    font-size: x-large;
-    font-family: Myanmar1;
+    font-size: larger;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 }
 /*********************BLOQUE DERECHO******************/
@@ -342,7 +392,7 @@ footer {
 }
 
 /*********************RESPONSIVE******************/
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 850px) {
   .listado-proyectos {
     font-size: small;
 
@@ -353,7 +403,7 @@ footer {
       font-size: small;
     }
     p {
-      font-size: medium;
+      font-size: small;
     }
   }
 
@@ -371,6 +421,12 @@ footer {
   .margen-principal {
     width: 95%;
   }
+
+  .contenedor-inferior {
+    a {
+      font-size: small;
+    }
+  }
 }
 
 /************************************APARTADO SOBRE MI*******************************/
@@ -380,7 +436,6 @@ footer {
 .negro-perfil {
   width: 90%;
   display: flex;
-  flex-wrap: wrap;
   color: white;
   margin-left: auto;
   margin-right: auto;
@@ -392,6 +447,7 @@ footer {
   img {
     width: 24%;
     aspect-ratio: 1/1;
+    min-width: 200px;
   }
 }
 
@@ -430,7 +486,6 @@ footer {
   a {
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
     margin-top: 14px;
 
     margin-bottom: 14px;
@@ -471,7 +526,7 @@ footer {
 
   p {
     font-size: x-large;
-    font-family: Myanmar1;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     padding: 7px;
   }
 }
@@ -488,9 +543,12 @@ footer {
 /*********************RESPONSIVE******************/
 @media screen and (max-width: 850px) {
   .negro-perfil {
-    width: 93%;
+    flex-direction: column;
+    width: 62%;
     img {
       width: 100%;
+      align-self: center;
+      margin-bottom: 7px;
     }
   }
 
@@ -511,7 +569,7 @@ footer {
     }
 
     a {
-      width: 90%;
+      font-size: medium;
     }
   }
 
@@ -521,7 +579,7 @@ footer {
     }
 
     h3 {
-      font-size: large;
+      font-size: larger;
     }
 
     h4 {
@@ -529,6 +587,7 @@ footer {
     }
 
     p {
+      font-size: larger;
     }
   }
 }
@@ -549,7 +608,6 @@ footer {
 .negro-inicial {
   width: 90%;
   display: flex;
-  flex-wrap: wrap;
   color: white;
   margin-left: auto;
   margin-right: auto;
@@ -561,6 +619,8 @@ footer {
   img {
     width: 43%;
     aspect-ratio: 16/9;
+
+    min-width: 250px;
   }
 }
 
@@ -570,7 +630,7 @@ footer {
   margin-left: 34px;
   margin-top: 10px;
 
-  font-size: x-large;
+  font-size: larger;
   span {
     font-size: xx-large;
   }
@@ -595,7 +655,7 @@ footer {
 .textos {
   p {
     font-size: x-large;
-    font-family: Myanmar1;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     padding: 7px;
   }
 }
@@ -632,7 +692,7 @@ footer {
   justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-
+  align-items: center;
   margin-bottom: 14px;
 }
 
@@ -666,8 +726,16 @@ footer {
 }
 
 /*********************RESPONSIVE******************/
+
+@media screen and (max-width: 1317px) {
+  .titulos-iniciales {
+    margin-left: 14px;
+    margin-top: 0px;
+  }
+}
 @media screen and (max-width: 850px) {
   .negro-inicial {
+    flex-wrap: wrap;
     width: 93%;
     img {
       width: 100%;
@@ -685,6 +753,18 @@ footer {
     h1 {
       font-size: large;
       margin-top: 0px;
+    }
+  }
+
+  .contenedor-titulo {
+    h2 {
+      font-size: medium;
+    }
+  }
+
+  .textos {
+    p {
+      font-size: larger;
     }
   }
 
