@@ -214,6 +214,7 @@ footer {
 .presentacion-breve {
   margin: 10px;
 
+  line-height: 1.35;
   text-align: center;
 }
 
@@ -461,6 +462,7 @@ footer {
   margin-bottom: 21px;
   flex-direction: column;
   p {
+    line-height: 1.35;
     font-size: x-large;
     padding: 7px;
   }
@@ -482,27 +484,30 @@ footer {
   h2 {
     padding: 7px;
   }
+}
 
-  a {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 14px;
+.ver-proyectos {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
 
-    margin-bottom: 14px;
-    text-decoration: none;
-    font-size: larger;
-    color: white;
-    background-color: black;
-    border: solid #bc4420 4px;
-    padding: 14px;
+  margin-bottom: 14px;
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+  background-color: black;
+  border: solid #bc4420 4px;
+  padding: 14px;
 
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .contenedor-textos {
   border-bottom: solid black 2px;
 
+  display: flex;
+
+  flex-direction: column;
   span {
     color: grey;
     padding: 7px;
@@ -529,6 +534,19 @@ footer {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     padding: 7px;
   }
+
+  a {
+    align-self: start;
+    margin: 7px;
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    background-color: white;
+    border: solid black 2px;
+    padding: 7px;
+
+    text-align: center;
+  }
 }
 
 .grado {
@@ -537,6 +555,12 @@ footer {
 
   span {
     color: white;
+  }
+
+  a {
+    color: white;
+    background-color: black;
+    border: solid white 2px;
   }
 }
 
