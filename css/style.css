@@ -308,6 +308,7 @@ footer {
 }
 
 .preview-img {
+  display: flex;
   margin-top: 14px;
   margin-right: 7px;
   margin-bottom: 7px;
