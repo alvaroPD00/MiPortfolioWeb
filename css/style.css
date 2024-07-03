@@ -314,11 +314,11 @@ footer {
   margin-bottom: 7px;
   display: flex;
 
-  aspect-ratio: 16/9;
-
   img {
     margin: 7px;
     width: 100%;
+
+    aspect-ratio: 5/3;
   }
 }
 
