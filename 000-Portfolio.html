@@ -121,26 +121,40 @@
         <article class="bloque-desarrollo">
           <div class="bloque-texto borde-blanco-negro">
             <div class="contenedor-titulo">
-              <h2>LOREM IPSUM DOLOR</h2>
+              <h2>Desmenuzando el referente</h2>
             </div>
             <div class="textos">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                est, doloremque modi debitis similique illum id repellat sed
-                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
-                architecto debitis possimus.
+                Comenzando a indagar en la interfaz de los juegos de pokemon de
+                Gameboy Color, logré identificar múltiples características
+                identitarias e intuitivas de desarrollar a través de CSS3.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                est, doloremque modi debitis similique illum id repellat sed
-                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
-                architecto debitis possimus.
+                Lo principal y muy icónico a apreciar resulta ser la tipografía,
+                debido a su conformación cuadrada y trazo pixelado,
+                característico de los juegos de la época. Accedí a los archivos
+                .woff necesarios para montar en mi página a través de la fuente
+                <a
+                  href="https://www.webfontfree.com/es/download/Pokemon-Classic"
+                  target="https://www.webfontfree.com/es/download/Pokemon-Classic"
+                  >Pokemon Classic Regular</a
+                >, publicada en WebFontFree.com.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                est, doloremque modi debitis similique illum id repellat sed
-                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
-                architecto debitis possimus.
+                Otra característica muy identitaria son los marcos de borde
+                negro doble, implementados para contener dialogos, menus y texto
+                interactivo a lo largo de todo el desarrollo de interfaz.
+                También son notorios los botones, carteles o casilleros
+                conformados por texto sintético, con un fondo de alto contraste
+                y un borde coloreado.
+              </p>
+              <p>
+                A su vez, en el menú de juego donde se hace presente la
+                información de un pokemon puntual, se hacen presente varios
+                elementos clave. La distribución superior expone la imagen del
+                pokémon en cuestión, acompañada de información anclada a su
+                derecha. Mientras que a la vez está separada con una línea negra
+                de otra sección inferior, con otro contenido de fondo coloreado.
               </p>
             </div>
           </div>
@@ -152,6 +166,66 @@
         </article>
 
         <!------------ARTICULO PAG INICIO------------->
+        <article class="bloque-desarrollo">
+          <div class="bloque-texto borde-blanco-negro">
+            <div class="contenedor-titulo">
+              <h2>Trasladando patrones</h2>
+            </div>
+            <div class="textos">
+              <p>
+                Teniendo ya ciertas bases estructurales y estéticas, el
+                siguiente paso era articular una propuesta en Adobe Illustrator.
+              </p>
+              <p>
+                El doble reborde negro se sintetizo como un recurso a
+                implementar en varios recuadros, por lo que en css3 desarrollé
+                una clase de nombre “borde-blanco-negro”, para ser llamada desde
+                html donde fuera pertinente. Así, en la página de Inicio, lo usé
+                para resaltar bloques de información del fondo. Como en la barra
+                superior de navegación, el botón de “conócelo” y los links de
+                los tres artículos expuestos.
+              </p>
+              <p>
+                Los carteles de texto simple y encuadrados, se sintetizaron en
+                botones nomenclados con un borde o relleno contrastante. Patrón
+                distribuido a lo largo de toda la web, pero presente en los
+                botones de la barra superior de navegación y en los bloques de
+                los tres artículos resaltados.
+              </p>
+              <p>
+                La paleta cromática obtenida del apartado informativo de pokemon
+                se implementó para dar identidad a la barra superior y al fondo
+                del cuerpo principal del contenido, mientras que el rojo de los
+                recuadros de los artículos se determinó tras desarrollar la
+                estructura y estética del apartado de artículos.
+              </p>
+              <p>
+                Mientras que las separaciones de bloques informativos de líneas
+                simples se aplicó en la descripción sencilla que invita al
+                apartado Sobre Mi y en el footer. Junto a otros bloques
+                presentes en otros apartados de la web.
+              </p>
+
+              <p>
+                Por último, la tipografía se implementó a estar presente en la
+                totalidad de la web, implementando mayúsculas completas cuando
+                se tratara de textos cortos. Sin embargo, debido a que la fuente
+                está desarrollada para pantallas pequeñas, su legibilidad para
+                párrafos extensos no resulta muy amigable, por lo que opté para
+                esas instancias por la tipografía Segoe UI, la cual se asemeja a
+                la Pokemon Classic y tiene una legibilidad estándar por ser una
+                fuente convencional.
+              </p>
+            </div>
+          </div>
+          <img
+            class="derecha-imagen bordeBlanco-FondoNegro"
+            src="img/contenido articulos/portfolio/Dessarrollo UX01.jpg"
+            alt="ilustrativo"
+          />
+        </article>
+
+        <!------------ARTICULO POKEDEX------------->
         <article class="bloque-desarrollo">
           <div class="bloque-texto borde-blanco-negro">
             <div class="contenedor-titulo">
@@ -180,12 +254,114 @@
           </div>
           <img
             class="derecha-imagen bordeBlanco-FondoNegro"
-            src="img/contenido articulos/portfolio/Dessarrollo UX01.jpg"
+            src="img/contenido articulos/portfolio/pokedex.gif"
             alt="ilustrativo"
           />
         </article>
 
-        <!------------ARTICULO POKEDEX------------->
+        <!------------ARTICULO APARTADO PROYECTOS------------->
+        <article class="bloque-desarrollo">
+          <div class="bloque-texto borde-blanco-negro">
+            <div class="contenedor-titulo">
+              <h2>LOREM IPSUM DOLOR</h2>
+            </div>
+            <div class="textos">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                est, doloremque modi debitis similique illum id repellat sed
+                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
+                architecto debitis possimus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                est, doloremque modi debitis similique illum id repellat sed
+                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
+                architecto debitis possimus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                est, doloremque modi debitis similique illum id repellat sed
+                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
+                architecto debitis possimus.
+              </p>
+            </div>
+          </div>
+          <img
+            class="derecha-imagen bordeBlanco-FondoNegro"
+            src="img/contenido articulos/portfolio/Dessarrollo UX02.jpg"
+            alt="ilustrativo"
+          />
+        </article>
+
+        <!------------ARTICULO PROYECTOS PARTICULARES------------->
+        <article class="bloque-desarrollo">
+          <div class="bloque-texto borde-blanco-negro">
+            <div class="contenedor-titulo">
+              <h2>LOREM IPSUM DOLOR</h2>
+            </div>
+            <div class="textos">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                est, doloremque modi debitis similique illum id repellat sed
+                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
+                architecto debitis possimus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                est, doloremque modi debitis similique illum id repellat sed
+                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
+                architecto debitis possimus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                est, doloremque modi debitis similique illum id repellat sed
+                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
+                architecto debitis possimus.
+              </p>
+            </div>
+          </div>
+          <img
+            class="derecha-imagen bordeBlanco-FondoNegro"
+            src="img/contenido articulos/portfolio/Dessarrollo UX03.jpg"
+            alt="ilustrativo"
+          />
+        </article>
+
+        <!------------ARTICULO APARTADO SOBRE MI------------->
+        <article class="bloque-desarrollo">
+          <div class="bloque-texto borde-blanco-negro">
+            <div class="contenedor-titulo">
+              <h2>LOREM IPSUM DOLOR</h2>
+            </div>
+            <div class="textos">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                est, doloremque modi debitis similique illum id repellat sed
+                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
+                architecto debitis possimus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                est, doloremque modi debitis similique illum id repellat sed
+                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
+                architecto debitis possimus.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                est, doloremque modi debitis similique illum id repellat sed
+                tempore aperiam nulla! Adipisci molestiae rem dolorem quidem! Ab
+                architecto debitis possimus.
+              </p>
+            </div>
+          </div>
+          <img
+            class="derecha-imagen bordeBlanco-FondoNegro"
+            src="img/contenido articulos/portfolio/Dessarrollo UX04.jpg"
+            alt="ilustrativo"
+          />
+        </article>
+
+        <!------------ARTICULO RESPONSIVE------------->
         <article class="bloque-desarrollo">
           <div class="bloque-texto borde-blanco-negro">
             <div class="contenedor-titulo">
