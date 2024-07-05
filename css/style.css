@@ -734,6 +734,14 @@ footer {
   margin: 7px;
 }
 
+.derecha-insert {
+  width: 45%;
+  height: 100%;
+  padding: 7px;
+  max-width: 384px;
+  margin: 7px;
+}
+
 /*********************FONDO MAIN******************/
 .volver-proyectos {
   display: flex;
