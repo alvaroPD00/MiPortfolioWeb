@@ -697,6 +697,7 @@ footer {
   border-top: solid black 4px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   a {
     margin: 14px;
     text-decoration: none;
